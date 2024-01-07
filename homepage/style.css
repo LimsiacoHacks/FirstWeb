@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 .banner {
     width: 100%;
-    height: 190vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/aot.webp");
     background-size: cover;
     background-position: center;
@@ -27,7 +28,7 @@
     font-weight: bold;
 }
 .logo:hover{
-    color: orangered;
+    color: red;
 }
 .navbar ul li {
     list-style-type: none;
@@ -45,7 +46,7 @@
     content: "";
     height: 2px;
     width: 0;
-    background: orangered;
+    background: red;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -80,7 +81,7 @@
     padding: 15px 0;
     margin: 20px 10px;
     border-radius: 25px;
-    border: 2px solid orangered;
+    border: 2px solid red;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -88,7 +89,7 @@
     overflow: hidden;
 }
 span {
-    background-color: orangered;
+    background-color: red;
     height: 100%;
     width: 0%;
     position: absolute; 
@@ -106,10 +107,17 @@ button:hover {
 /* New Page CSS */
 .blog-section{
     width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/bg2.3.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .blog-section .section-content {
     width: 85%;
-    margin: 20px auto;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
 }
 .blog-section .section-content .slam-dunk-title {
     width: 60%;
@@ -120,7 +128,7 @@ button:hover {
     font-size: 40px;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif Calibri;
-    color: orangered;
+    color: red;
 }
 .blog-section .section-content .slam-dunk-title p {
     font-size: 20px;
@@ -133,7 +141,6 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     margin: 25px auto;
-
 }
 /* Card 1 */
 .blog-section .section-content .cards .card {
@@ -151,7 +158,7 @@ button:hover {
 }
 .blog-section .section-content .cards .card .article h4 {
     font-size: 24px;
-    color: orangered;
+    color: red;
 }
 .blog-section .section-content .cards .card .article p {
     font-size: 14px;
@@ -200,7 +207,7 @@ button:hover {
 }
 .blog-section .section-content .cards .card2 .article h4 {
     font-size: 24px;
-    color: orangered;
+    color: red;
 }
 .blog-section .section-content .cards .card2 .article p {
     font-size: 14px;
@@ -249,7 +256,7 @@ button:hover {
 }
 .blog-section .section-content .cards .card3 .article h4 {
     font-size: 24px;
-    color: orangered;
+    color: red;
 }
 .blog-section .section-content .cards .card3 .article p {
     font-size: 14px;
@@ -291,7 +298,7 @@ button:hover {
 @media screen and (max-width: 768px){
     .banner {
         width: 100%;
-        height: 300vh;
+        height: 100vh;
     }
     .navbar ul li {
         position: relative;
@@ -306,7 +313,7 @@ button:hover {
         position: absolute;
         left: 0;
         bottom: 5px;
-        background-color: orangered;
+        background-color: red;
         width: 0;
         transform: scaleX(0);
         transform-origin: center;
@@ -347,9 +354,14 @@ button:hover {
 /* About us CSS */
 .about-section{
     width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .heading {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,7 +402,7 @@ button:hover {
 }
 .about-image {
     flex: 1;
-    margin-right: 40px;
+    margin: 0 50px;
     overflow: hidden;
 }
 .about-image img {
@@ -449,7 +461,7 @@ button:hover {
         flex-direction: column;
     }
     .about-image {
-        margin-right: 0px;
+        margin-right: 20px;
         margin-bottom: 20px;
     }
     .about-content {
@@ -462,9 +474,14 @@ button:hover {
 }
 /* Gallery CSS */
 .gallery{
-    margin-bottom: 200px;
     padding-top: 10px;
     overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/bg4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .gallery input {
     display: none;
